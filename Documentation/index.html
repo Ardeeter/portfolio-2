@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Documentation | Miro</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/googlecode.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <header id="site-header">
+            <div class="row">
+                <div class="col-9">
+                    <button class="button-sidebar" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="header-logo">
+                        Miro - Documentation
+                        <a href="https://themeforest.net/user/afracode"><small>by Afracode</small></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <p class="header-text"><span class="version-title">Version</span> <span class="version-number">1.0</span></p>
+                </div>
+            </div>
+        </header>
+        <div id="site-wrapper">
+            <div id="site-sidebar">
+                <nav class="sidebar-nav">
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="#getting-started">Getting Started</a>
+                            <ul class="sidebar-submenu">
+                                <li>
+                                    <a href="#getting-started-1">Installation</a>
+                                </li>
+                                <li>
+                                    <a href="#getting-started-2">Install Npm Packages</a>
+                                </li>
+                                <li>
+                                    <a href="#getting-started-3">Development server</a>
+                                </li>
+                                <li>
+                                    <a href="#getting-started-4">Build</a>
+                                </li>
+                                <li>
+                                    <a href="#getting-started-5">Updates</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#structure">Structure</a>
+                            <ul class="sidebar-submenu">
+                                <li>
+                                    <a href="#structure-folder">Folder Structure</a>
+                                </li>
+                                <li>
+                                    <a href="#structure-scenes">Scenes Structure</a>
+                                </li>
+                                <li>
+                                    <a href="#structure-homepages">Homepage Structure</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#customization">Customization</a>
+                            <ul class="sidebar-submenu">
+                                <li>
+                                    <a href="#customization-colors">How to change Skins?</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#credits">Credits</a>
+                            <ul class="sidebar-submenu">
+                                <li>
+                                    <a href="#credits-packages">Packages</a>
+                                </li>
+                                <li>
+                                    <a href="#credits-images">Images</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="site-content">
+                <!-- Section -->
+                <section>
+                    <div class="block-doc">
+                        <h1 id="getting-started">Getting Started</h1>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="getting-started-1">Installation</h3>
+                        <p><b>Node.js and NPM </b>: You can download Node.js from <a href="https://nodejs.org">https://nodejs.org</a>. NPM comes bundled with Node.js.</p>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="getting-started-2">Install Npm Packages</h3>
+                        <p><b>NPM</b> : You must have to install requirement packages. In the project directory, you can run: <code>npm install</code> to install all the necessary dependencies.</p>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="getting-started-3">Development server</h3>
+                        <p>Run <code>npm start</code> for a development mode. Open http://localhost:3000 to view it in the browser. The page will reload if you make edits. You will also see any lint errors in the console.</p>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="getting-started-4">Build</h3>
+                        <p>Run <code>npm run build</code> to build the project for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance. See the section about <a href="https://facebook.github.io/create-react-app/docs/deployment">deployment</a> for more information.</p>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="getting-started-5">Updates</h3>
+                        <p>You always be able to download the new update of this template for free from the themeforest.net -> Downloads section. Make sure to back up your live website before doing any updates. You will be required to update any folders and files located in the template archive and especially make sure that \public folder is also updated.</p>
+                    </div>
+                </section>
+                <!-- Section -->
+                <section>
+                    <div class="block-doc">
+                        <h2 id="structure">structure</h2>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="structure-folder">Folder Structure</h3>
+                        <pre>
++         
+|——Miro                             // root folder
+|  |——public/
+|  |  |——assets/                    
+|  |  |    |——css/                  -- css files
+|  |  |    |——fonts/                -- fonts files
+|  |  |    |——images/               -- images files
+|  |  |    |——js/                   -- js files
+|  |  |    |——scss/                 -- scss files
+|  |  |——favicon.ico                -- favicon
+|  |  |——manifest.json              -- manifest.json provides information about an application.
+|  |  |——index.html
+|  |——src/
+|  |  |——components/                -- Component Files Folder.
+|  |  |——scenes/                    -- All Home Pages Include Here.   
+|  |  |——index.js        
+|  |  |——index.scss        
+|  |  |——serviceWorker.js         
+|  |——package.json
+|  |——package-lock.json               
++
+                        </pre>
+                        <p><b>Help</b> : Forther details can be found here official documentation <a href="https://reactjs.org/docs/getting-started.html">https://reactjs.org/docs/getting-started.html</a>.</p>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="structure-scenes">Scenes Structure</h3>
+                        <pre>
++         
+|——Miro                            
+|  |——src/
+|  |  |——scenes/                    
+|  |  |  |——Demo/                  
+|  |  |  |——Home/                  
+|  |  |  |——Home2/                  
+|  |  |  |——Home3/                  
+|  |  |  |——Home4/                  
+|  |  |  |——Home5/                       
+|  |  |  |——Home6/                       
++                            
+                        </pre>
+                        <img src="assets/images/structure-scenes.png" alt="customization-scenes" />
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="structure-homepages">Homepage Structure</h3>
+                        <pre>
++         
+|——Miro                            
+|  |——src/
+|  |  |——scenes/                               
+|  |  |  |——Home/                  
+|  |  |  |  |——Header.js                // header.   
+|  |  |  |  |——index.js                 // Router.          
+|  |  |  |  |——Intro.js                  
+|  |  |  |  |——About.js           
+|  |  |  |  |——Blog.js
+|  |  |  |  |——Service.js
+|  |  |  |  |——Contact.js                  
+|  |  |  |  |——Portfolio.js                                 
+|  |  |  |  |——BlogSinglePost.js                  
++                            
+                        </pre>
+                        <img src="assets/images/structure-homepages.png" alt="customization-Homepages" />
+                    </div>
+                </section>
+                <!-- Section -->
+                <section>
+                    <div class="block-doc">
+                        <h2 id="customization">Customization</h2>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="customization-colors">How to change Skins?</h3>
+                        <pre>
++         
+|——Miro                            
+|  |——public/
+|  |  |——assets/                               
+|  |  |  |——scss/                  
+|  |  |  |  |——default/
+|  |  |  |  |  |——_reset.scss
++  
+                        </pre>
+                        <img src="assets/images/customization-colors.png" alt="customization-colors" />
+                    </div>
+                </section>
+                <!-- Section -->
+                <section>
+                    <div class="block-doc">
+                        <h2 id="credits">Credits</h2>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="credits-packages">package.json Dependencies</h3>
+                        <pre>
+"dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-grid-system": "^6.3.1",
+    "react-helmet": "^6.0.0",
+    "react-icons": "^3.10.0",
+    "react-images": "^1.1.7",
+    "react-particles-js": "^3.2.1",
+    "react-router-dom": "^5.1.2",
+    "react-router-transition": "^2.0.0",
+    "react-scripts": "3.4.1",
+    "react-slick": "^0.25.2",
+    "react-tabs": "^3.1.0",
+    "react-text-loop": "^2.3.0",
+    "react-transition-group": "^4.4.1",
+    "slick-carousel": "^1.8.1",
+    "themify-icons-sass": "^1.0.1"
+},                       
+                        </pre>
+                    </div>
+                    <div class="block-doc">
+                        <h3 id="credits-images">Images</h3>
+                        <ul>
+                            <li>
+                                <a href="https://unsplash.com/" rel="nofollow">Unsplash</a>
+                            </li>
+                            <li>
+                                <a href="https://www.freepik.com/" rel="nofollow">Freepik</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Section -->
+            </div>
+        </div>
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/highlight.js"></script>
+        <script src="assets/js/main-scripts.js"></script>
+    </body>
+</html>
