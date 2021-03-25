@@ -1,10 +1,11 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { Container } from "react-grid-system";
+import { Link } from 'react-router-dom'
 // Components
 import GoBack from "../../../components/common/GoBack";
 
-function BlogSinglePost() {
+function Swatch() {
     return (
         <section className="section section-single-post section-single-post-1">
             <div className="display-spacing">
@@ -14,16 +15,18 @@ function BlogSinglePost() {
                             <div className="post-head">
                                 <div class="post-info">
                                     <GoBack />
-                                    <h1>Bugout: Bootcamp Survival Guide</h1>
+                                    <h1>
+                                        Neighborhood Swatch
+                                    </h1>
                                     
                                 </div>
                             </div>
                             <div className="post-body">
                                 <div className="post-image">
-                                    <img src="../assets/images/portfolio/bugout.png" alt="Single Post" />
+                                    <img src="../assets/images/portfolio/neighborhood.png" alt="Single Post" />
                                 </div>
                                 <div className="post-content">
-                                    <p>Learning two years of material in anything is hard enough, and coding is no exception. It requires a lot of late nights, determination, and organization. That third thing is where we come in.</p>
+                                    <p>Purchasing a home is a huge undertaking and the process can become overwhelming when also relocating to a new city. Neighborhood Swatch was created to give users a place to start their search.</p>
                                     {/* <p>Bugout is a full-stack application made to help the current bootcamp student achieve success. It has 6 different code editors, each for a different language, where students can write notes or copy and paste code blocks from lecture. Students can save these notes to their Google Drive. Once saved, students can update and delete them these notes from there Google Drive via our application. Below each code editor, there are tips and tricks for each language, as well as a check in form. The right sidebar features call resources that can be updated by the instructor. The last feature is a job board bootcampers can use to get a head start on the job hunt by searching for a available jobs in their city. </p> */}
                                     <p>
                                         <b>Key Features:</b>
@@ -31,30 +34,29 @@ function BlogSinglePost() {
                                     <ul class="el-list-check">
                                         <li>
                                             <FaCheck className="icon" />
-                                            6 Code Editors
+                                            3 Neighborhood Recommendations
                                         </li>
                                         <li>
                                             <FaCheck className="icon" />
-                                            Tips and Tricks For Each Language
+                                            Neighborhood Age Demographic
                                         </li>
                                         <li>
                                             <FaCheck className="icon" />
-                                            Language Check In
+                                            Neighborhood Housing Vacancy
                                         </li>
                                         <li>
                                             <FaCheck className="icon" />
-                                            Resources
+                                            Neighborhood Average Income
                                         </li>
                                         <li>
                                             <FaCheck className="icon" />
-                                            Job Board
+                                            Home Buying Resources
                                         </li>
                                     </ul>
-                                    <p>Bugout is a full-stack application made to help the current bootcamp student achieve success. It has six different code editors, each for a different language, where students can write notes or copy and paste code blocks from lecture. Students can save these notes to their Google Drive. Once saved, students can update and delete them from their Google Drive via our application.</p>
-                                    <p>Below each code editor, there are tips and tricks for each language, as well as a check-in form. The right sidebar features class resources that can be updated by the instructor. The last feature is a job board bootcampers can use to get a head start on the job hunt by searching for a available jobs in their city.</p>
-                                    <p><b>My Role: </b>My main role in this project was API integration. I used the Google Drive API to create, update, and delete files and folders within the user's google drive. The first time a user saves a file, a Bootcamp Survival Guide folder is created along with a folder inside for the language they are working in. The file they are saving is saved inside the folder of that language.</p>
-                                    <p>I integrated the Google Picker API for the UI/UX aspect. The user is able to see into their Google Drive on our application and pick which files they would like to update or delete with the press of a button.</p>
-                                    <p>The last API I used was the Adzuna API. Users can input keywords and location into the job board form and with some data manipulation, jobs will populate matching that criteria.</p>
+                                    <p>This front-end website was created for people who are looking to relocate and purchase a home in the Atlanta area. It recommends three neighborhoods based on income and populates graphs for age demographics, housing vacancy, and income. After populating data for the three matches, the user is provided with resources that explain the home buying process. Links are also available for each zip code where the user can browse homes in each area on Realtor.com.</p>
+                                    <p><b>My Role: </b>I handled two different API fetches using async and await patterns. The data I retrieved from the Realtor API was threaded into the fetch for the Census API. I then used the data I got back from the Census API to create line, doughnut, and bar graphs through Chart.js. I also wrote the JavaScript logic for the homepage where users can access the recommendations for neighborhoods.</p>
+                                    {/* <p></p>
+                                    <p></p> */}
                                 </div>
                                 <div>
                                     <span><b>Technologies:</b></span>
@@ -63,25 +65,16 @@ function BlogSinglePost() {
                                             JavaScript
                                         </li>
                                         <li>
-                                            Node.js
+                                            Firebase
                                         </li>
                                         <li>
-                                            Express
+                                            jQuery
                                         </li>
                                         <li>
-                                            React
+                                            RESTful APIs
                                         </li>
                                         <li>
-                                            Redux
-                                        </li>
-                                        <li>
-                                            PostgreSQL
-                                        </li>
-                                        <li>
-                                            Sequelize
-                                        </li>
-                                        <li>
-                                            Material UI
+                                            Bootstrap
                                         </li>
                                         <li>
                                             HTML
@@ -89,20 +82,11 @@ function BlogSinglePost() {
                                         <li>
                                             CSS
                                         </li>
-                                        <li>
-                                            Google OAuth2
-                                        </li>
-                                        <li>
-                                            CodeMirror2
-                                        </li>
                                     </ul>
                                 </div>
                                 <div className="el-icon">
-                                        <span className={`el-icon-icon`}><i class="devicon-github-original"></i> <a href="https://github.com/anjatmyers/capstone" target="_blank" rel="noopener noreferrer">View Code</a></span>
+                                        <span className={`el-icon-icon`}><i class="devicon-github-original"></i> <a href="https://github.com/anjatmyers/teamRedProject" target="_blank" rel="noopener noreferrer">View Code</a></span>
                                 </div>
-                                {/* <div>
-                                    <a href="https://github.com/anjatmyers/capstone" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"></i><b>View Code</b></a>
-                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -112,4 +96,4 @@ function BlogSinglePost() {
     );
 }
 
-export default BlogSinglePost;
+export default Swatch;

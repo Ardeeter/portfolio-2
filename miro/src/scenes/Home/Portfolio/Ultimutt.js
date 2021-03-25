@@ -91,9 +91,12 @@ function Ultimutt() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div>
-                                    <a href="https://github.com/Ardeeter/Ultimutt-match" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"></i><b>View Code</b></a>
+                                <div className="el-icon">
+                                        <span className={`el-icon-icon`}><i class="devicon-github-original"></i> <a href="https://github.com/Ardeeter/Ultimutt-match" target="_blank" rel="noopener noreferrer">View Code</a></span>
                                 </div>
+                                {/* <div>
+                                    <a href="https://github.com/Ardeeter/Ultimutt-match" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"></i><b>View Code</b></a>
+                                </div> */}
                             </div>
                         </div>
                     </div>

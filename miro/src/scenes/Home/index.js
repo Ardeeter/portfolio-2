@@ -13,6 +13,10 @@ import Testimonial from "./Testimonial";
 import BlogSinglePost from "./BlogSinglePost";
 import BugOut from './Portfolio/Bugout'
 import Ultimutt from './Portfolio/Ultimutt'
+import Layrfive from './Portfolio/Layrfive'
+import Hero from './Portfolio/Hero'
+import Avicii from './Portfolio/Avicii'
+import Swatch from './Portfolio/Swatch'
 // Components
 import Helmet from "../../components/common/Helmet";
 import Switch from "../../components/common/Switch";
@@ -54,6 +58,22 @@ const routes = [
     {
         path: "/blog/ultimutt",
         component: <Ultimutt />,
+    },
+    {
+        path: "/blog/layrfive",
+        component: <Layrfive />,
+    },
+    {
+        path: "/blog/hero",
+        component: <Hero />,
+    },
+    {
+        path: "/blog/avicii",
+        component: <Avicii />,
+    },
+    {
+        path: "/blog/swatch",
+        component: <Swatch />,
     },
     {
         path: "/testimonial",
