@@ -12,8 +12,8 @@ function Intro() {
     }
 
     return (
-        <section className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/tech-light2.jpg)` }}>
-            <Particles
+        <section className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/bob.jpg)` }}>
+            {/* <Particles
                 params={{
                     particles: {
                         number: {
@@ -33,6 +33,52 @@ function Intro() {
                     },
                 }}
                 className="el-particles"
+            /> */}
+            <Particles
+                params={{
+                    particles: {
+                        number: {
+                            value: 300,
+                            density: {
+                                enable: true,
+                            },
+                        },
+                        size: {
+                            value: 5,
+                            random: true,
+                        },
+                        move: {
+                            direction: "bottom",
+                            out_mode: "out",
+                        },
+                        line_linked: {
+                            enable: false,
+                        },
+                    },
+                    interactivity: {
+                        events: {
+                            onhover: {
+                                enable: true,
+                                mode: "bubble"
+                            },
+                            onclick: {
+                                enable: true,
+                                mode: "repulse"
+                            }
+                        },
+                        modes: {
+                            bubble: {
+                                distance: 250,
+                                duration: 2,
+                                size: 3,
+                            },
+                            repulse: {
+                                distance: 400,
+                                duration: 4
+                            }
+                        }
+                    }
+                }}
             />
             <div className="display-center">
                 <Container>
@@ -48,7 +94,7 @@ function Intro() {
                                 <span>Coder</span>
                             </TextLoop>
                             <br />
-                            {/* Based in Santa Barbara */}
+                            <h5>Based in Santa Barbara</h5>
                         </h1>
                         <button className="button button-lg button-primary" onClick={downloadFile}>
                             <span className="wave"></span>

@@ -13,26 +13,26 @@ const links = [
         title: "About",
         path: "/about",
     },
-    {
-        title: "Resume",
-        path: "/resume",
-    },
-    {
-        title: "Service",
-        path: "/service",
-    },
+    // {
+    //     title: "Resume",
+    //     path: "/resume",
+    // },
+    // {
+    //     title: "Service",
+    //     path: "/service",
+    // },
+    // {
+    //     title: "Portfolio",
+    //     path: "/portfolio",
+    // },
     {
         title: "Portfolio",
-        path: "/portfolio",
-    },
-    {
-        title: "Blog",
         path: "/blog",
     },
-    {
-        title: "Testimonial",
-        path: "/testimonial",
-    },
+    // {
+    //     title: "Testimonial",
+    //     path: "/testimonial",
+    // },
     {
         title: "Contact",
         path: "/contact",
@@ -100,7 +100,7 @@ function Header() {
             <div className={`app-sidenav ${displaySidenav && "active"}`}>
                 <div className="sidenav-menu">
                     <div className="logo">
-                        <Link to={`url`.replace(/([^:])(\/\/+)/g, "$1/")}>Miro</Link>
+                        <Link to={`url`.replace(/([^:])(\/\/+)/g, "$1/")}>Ally Deeter</Link>
                     </div>
                     <button className="button" onClick={(e) => handleClick(e)}></button>
                     <ul className="sidenav-nav">

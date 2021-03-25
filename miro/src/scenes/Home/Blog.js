@@ -7,33 +7,53 @@ import Headline from "../../components/common/Headline";
 
 const posts = [
     {
-        title: "What has happened to all of the Design ideas?",
-        image: "/assets/images/blog/1-1.jpg",
-        date: "May 15th, 2019",
-        link: "/single-post",
-        icon: "ti-light-bulb",
+        title: "Bugout",
+        image: "/assets/images/portfolio/bugout.png",
+        date: "Team",
+        link: "/bugout",
+        icon: <i class="devicon-javascript-plain"></i>,
+        github: "https://github.com/anjatmyers/capstone"
     },
     {
-        title: "The Best Sale Marketer Of The Next Year",
-        image: "/assets/images/blog/1-2.jpg",
-        date: "May 18th, 2019",
-        link: "/single-post",
-        icon: "ti-mobile",
+        title: "Ultimutt Match",
+        image: "/assets/images/portfolio/ultimutt.png",
+        date: "Solo",
+        link: "/ultimutt",
+        icon: <i class="devicon-react-original"></i>,
+        github: "https://github.com/ardeeter/ultimutt-match"
     },
     {
-        title: "What gets in the way of greate Stategy",
-        image: "/assets/images/blog/1-3.jpg",
-        date: "May 21h, 2019",
-        link: "/single-post",
-        icon: "ti-paint-bucket",
+        title: "LayrFIVE",
+        image: "/assets/images/portfolio/layrfive.png",
+        date: "Team",
+        link: "/layrfive",
+        icon: <i class="devicon-nodejs-plain"></i>,
+        github: "https://github.com/laynemag/LayrFIVE"
     },
     {
-        title: "How to create great logo for your Business",
-        image: "/assets/images/blog/1-4.jpg",
-        date: "May 21th, 2019",
-        link: "/single-post",
-        icon: "ti-light-bulb",
+        title: "Hero RPG",
+        image: "/assets/images/portfolio/hero.jpg",
+        date: "Solo",
+        link: "/hero",
+        icon: <i class="devicon-python-plain"></i>,
+        github: "https://github.com/Ardeeter/hero-rpg"
     },
+    {
+        title: "Avicii Band Site",
+        image: "/assets/images/portfolio/band.png",
+        date: "Solo",
+        link: "/avicii",
+        icon: <i class="devicon-express-original"></i>,
+        github: "https://github.com/Ardeeter/band_project"
+    },
+    {
+        title: "N. Swatch",
+        image: "/assets/images/portfolio/neighborhood.png",
+        date: "Team",
+        link: "/swatch",
+        icon: <i class="devicon-bootstrap-plain"></i>,
+        github: "https://github.com/anjatmyers/teamRedProject"
+    }
 ];
 
 function Blog() {
@@ -58,8 +78,8 @@ function Blog() {
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
                 },
             },
             {
@@ -78,7 +98,7 @@ function Blog() {
         <section className="section section-blog section-blog-1">
             <div className="display-spacing">
                 <Container className="container">
-                    <Headline label="Blog" title="Let's See My Work" divider_1={true} position="center" />
+                    <Headline label="Portfolio" title="Let's See My Work" divider_1={true} position="center" />
                     <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
                         {posts.map((item, index) => (
                             <div key={index} className="post-item">
@@ -87,16 +107,16 @@ function Blog() {
                                 </Link>
                                 <div className="post-content">
                                     <div className="el-icon">
-                                        <span className={`el-icon-icon ${item.icon}`}></span>
+                                        <span className={`el-icon-icon`}>{item.icon}</span>
                                     </div>
                                     <div className="post-data">
                                         <h4 className="post-title">
                                             <Link to={`${path}${item.link}`.replace(/([^:])(\/\/+)/g, "$1/")}>{item.title}</Link>
                                         </h4>
-                                        <div className="post-date">
-                                            <i className="ti-time"></i>
-                                            {item.date}
-                                        </div>
+                                        <a className="post-date" href={item.github} target="_blank" rel="noopener noreferrer">
+                                        <i class="devicon-github-original"></i>
+                                            View Code
+                                        </a>
                                     </div>
                                 </div>
                             </div>

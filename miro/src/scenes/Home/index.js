@@ -11,6 +11,8 @@ import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Testimonial from "./Testimonial";
 import BlogSinglePost from "./BlogSinglePost";
+import BugOut from './Portfolio/Bugout'
+import Ultimutt from './Portfolio/Ultimutt'
 // Components
 import Helmet from "../../components/common/Helmet";
 import Switch from "../../components/common/Switch";
@@ -42,8 +44,16 @@ const routes = [
         component: <Blog />,
     },
     {
-        path: "/blog/single-post",
+        path: "/portfolio/single-post",
         component: <BlogSinglePost />,
+    },
+    {
+        path: "/blog/bugout",
+        component: <BugOut />,
+    },
+    {
+        path: "/blog/ultimutt",
+        component: <Ultimutt />,
     },
     {
         path: "/testimonial",
