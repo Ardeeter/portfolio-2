@@ -108,6 +108,13 @@ function About() {
                                     <Col xs={2} sm={1} md={1} className="m-2">
                                         <div className="el-card-icon">
                                             <div className="el-icon">
+                                                <span className="el-icon-icon"><i class="devicon-yarn-plain"></i></span>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col xs={2} sm={1} md={1} className="m-2">
+                                        <div className="el-card-icon">
+                                            <div className="el-icon">
                                                 <span className="el-icon-icon"><i class="devicon-amazonwebservices-original"></i></span>
                                             </div>
                                         </div>

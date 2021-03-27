@@ -7,9 +7,9 @@ import { Document } from 'react-pdf';
 
 function Intro() {
 
-    const downloadFile = () => {
-        window.location.href = "https://localhost.com/src/assets/files/Resume.pdf"
-    }
+    // const downloadFile = () => {
+    //     window.location.href = "https://localhost.com/src/assets/files/Resume.pdf"
+    // }
 
     return (
         <section className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/pier-sb2.jpg)` }}>
@@ -96,9 +96,9 @@ function Intro() {
                             <br />
                             <h5>Based in Santa Barbara</h5>
                         </h1>
-                        <button className="button button-lg button-primary" onClick={downloadFile}>
+                        <button className="button button-lg button-primary">
                             <span className="wave"></span>
-                            <span className="text"><Link to="./assets/files/Resume.pdf" download>Download CV</Link></span>
+                            <span className="text"><a href="https://drive.google.com/file/d/1gytyPxV1ECUppjLrBZutpkT6HxtTs_H6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></span>
                             {/* <span className="text"><Document file="./assets/files/Resume.pdf">Resume</Document></span> */}
                             
                         </button>

@@ -13,7 +13,7 @@ function Layrfive() {
                     <div className="max-w-768 div-center">
                         <div className="post">
                             <div className="post-head">
-                                <div class="post-info">
+                                <div className="post-info">
                                     <GoBack />
                                     <h1>
                                         LayrFIVE
