@@ -12,7 +12,7 @@ function Intro() {
     }
 
     return (
-        <section className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/bob.jpg)` }}>
+        <section className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/pier-sb2.jpg)` }}>
             {/* <Particles
                 params={{
                     particles: {
@@ -34,7 +34,7 @@ function Intro() {
                 }}
                 className="el-particles"
             /> */}
-            <Particles
+            {/* <Particles
                 params={{
                     particles: {
                         number: {
@@ -79,7 +79,7 @@ function Intro() {
                         }
                     }
                 }}
-            />
+            /> */}
             <div className="display-center">
                 <Container>
                     <div className="el-heading">

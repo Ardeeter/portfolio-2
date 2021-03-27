@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useRouteMatch, NavLink, Link } from "react-router-dom";
-import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 // Components
 import DemoOptions from "../../components/common/DemoOptions";
 
@@ -79,6 +79,16 @@ function Header() {
                 <div className="header-follow">
                     <ul>
                         <li>
+                            <a href="https://github.com/Ardeeter" target="_blank" rel="noopener noreferrer">
+                                <FaGithub className="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/in/ally-deeter" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin className="icon" />
+                            </a>
+                        </li>
+                        {/* <li>
                             <a href="/#">
                                 <i className="ti-twitter-alt"></i>
                             </a>
@@ -92,7 +102,7 @@ function Header() {
                             <a href="/#">
                                 <i className="ti-vimeo-alt"></i>
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                     <p>Follow Me</p>
                 </div>
@@ -114,19 +124,19 @@ function Header() {
                     </ul>
                     <div className="sidenav-links">
                         <ul>
-                            <li>
+                            {/* <li>
                                 <a href="!#">
                                     <FaTwitter className="icon" />
                                 </a>
-                            </li>
+                            </li> */}
                             <li>
-                                <a href="!#">
+                                <a href="https://github.com/Ardeeter" target="_blank" rel="noopener noreferrer">
                                     <FaGithub className="icon" />
                                 </a>
                             </li>
                             <li>
-                                <a href="!#">
-                                    <FaInstagram className="icon" />
+                                <a href="http://www.linkedin.com/in/ally-deeter" target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedin className="icon" />
                                 </a>
                             </li>
                         </ul>
