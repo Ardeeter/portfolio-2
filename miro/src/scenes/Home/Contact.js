@@ -1,7 +1,55 @@
-import React from "react";
+import React, {useState} from "react";
 import { Container, Hidden, Row, Col } from "react-grid-system";
+import * as emailjs from 'emailjs-com'
 
 function Contact() {
+
+    // const initialState = {
+    //     name: '',
+    //     email: '',
+    //     subject: 'Portfolio Email',
+    //     message: '',
+    // }
+
+    const [user_name, setUserName] = useState();
+    const [user_email, setUserEmail] = useState();
+    const [message, setMessage] = useState();
+    // const [state, setState] = useState(initialState);
+
+    const sendMessage = (e) => {
+
+        e.preventDefault();
+        
+        let templateParams = {
+            user_name: user_name,
+            user_email: user_email,
+            message: message,
+            to_name: 'allydeeter6639@gmail.com'
+       }
+
+       emailjs.send(
+        'service_5ypbb5i',
+        'template_ouodbzh',
+         templateParams,
+        'user_ix4HSO1BENpZUq4s4Ongu'
+       )
+
+       alert("Message has been sent!")
+
+       resetForm()
+    }
+
+    const resetForm = () => {
+
+        setUserName("")
+        setUserEmail("")
+        setMessage("")
+    }
+
+    // const handleChange = (param, e) => {
+    //     this.setState({ [param]: e.target.value })
+    // }
+
     return (
         <section className="section section-contact section-contact-1">
             <div className="display-spacing">
@@ -30,24 +78,24 @@ function Contact() {
                                     <Row className="row">
                                         <Col xs={12} sm={12} md={6}>
                                             <div className="form-item">
-                                                <input type="text" id="form-item-name" />
+                                                <input type="text" id="form-item-name" value={user_name} onChange={(e)=>setUserName(e.target.value)}/>
                                                 <label htmlFor="form-item-name">Your Name</label>
                                             </div>
                                         </Col>
                                         <Col xs={12} sm={12} md={6}>
                                             <div className="form-item">
-                                                <input type="email" id="form-item-email" />
+                                                <input type="email" id="form-item-email" value={user_email} onChange={(e)=>setUserEmail(e.target.value)}/>
                                                 <label htmlFor="form-item-email">Your Email</label>
                                             </div>
                                         </Col>
                                         <Col xs={12} sm={12} md={12}>
                                             <div className="form-item">
-                                                <textarea id="form-item-message"></textarea>
+                                                <textarea id="form-item-message" value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
                                                 <label htmlFor="form-item-message">Your Message</label>
                                             </div>
                                         </Col>
                                         <Col xs={12} sm={12} md={12}>
-                                            <button className="button button-md button-primary">Send Message</button>
+                                            <button className="button button-md button-primary" onClick={sendMessage}>Send Message</button>
                                         </Col>
                                     </Row>
                                 </form>

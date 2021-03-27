@@ -103,7 +103,7 @@ function Intro() {
                             
                         </button>
                         <button className="button button-lg">
-                            <span className="text">Contact Me</span>
+                            <span className="text"><a href="mailto:allydeeter6639@gmail.com">Contact Me</a></span>
                         </button>
                     </div>
                 </Container>
