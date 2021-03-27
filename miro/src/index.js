@@ -23,13 +23,13 @@ const Root = () => {
     return (
         <div>
             <Switch>
-                <Route exact path="/" component={Demo} />
+                {/* <Route exact path="/" component={Demo} /> */}
                 <Route path="/home-1" component={Home} />
-                <Route path="/home-2" component={Home2} />
-                <Route path="/home-3" component={Home3} />
-                <Route path="/home-4" component={Home4} />
-                <Route path="/home-5" component={Home5} />
-                <Route path="/home-6" component={Home6} />
+                {/* <Route path="/home-2" component={Home2} /> */}
+                {/* <Route path="/home-3" component={Home3} /> */}
+                {/* <Route path="/home-4" component={Home4} /> */}
+                {/* <Route path="/home-5" component={Home5} /> */}
+                {/* <Route path="/home-6" component={Home6} /> */}
                 <Route component={RedirectAs404} />
             </Switch>
         </div>
