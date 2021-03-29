@@ -98,7 +98,7 @@ function Intro() {
                         </h1>
                         <button className="button button-lg button-primary">
                             <span className="wave"></span>
-                            <span className="text"><a href="https://drive.google.com/file/d/1gytyPxV1ECUppjLrBZutpkT6HxtTs_H6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></span>
+                            <span className="text"><a href="https://drive.google.com/file/d/1N1GTDnf0JK20KhYcy_bZMIbhd4xMWWey/view?usp=sharing">Resume</a></span>
                             {/* <span className="text"><Document file="./assets/files/Resume.pdf">Resume</Document></span> */}
                             
                         </button>
