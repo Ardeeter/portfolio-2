@@ -39,7 +39,7 @@ const Root = () => {
 ReactDOM.render(
     <HashRouter>
         <div>
-            <Route render={({ location }) => (location.state && location.state.is404 ? <Error404 /> : <Root />)} />
+            <Route render={({ location }) => (location.state && location.state.is404 ? <Home /> : <Root />)} />
         </div>
     </HashRouter>,
     document.getElementById("root")

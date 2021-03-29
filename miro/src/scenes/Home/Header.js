@@ -53,7 +53,8 @@ function Header() {
         <>
             <header className="app-header app-header-1">
                 <div className="header-logo">
-                    <Link to={`url`.replace(/([^:])(\/\/+)/g, "$1/")}>Ally Deeter</Link>
+                    {/* <Link to={`url`.replace(/([^:])(\/\/+)/g, "$1/")}>Ally Deeter</Link> */}
+                    <a href='https://www.allydeeter.dev/#//intro'>Ally Deeter</a>
                 </div>
                 <button className="button button-menu" onClick={(e) => handleClick(e)}>
                     <span></span>
@@ -110,7 +111,8 @@ function Header() {
             <div className={`app-sidenav ${displaySidenav && "active"}`}>
                 <div className="sidenav-menu">
                     <div className="logo">
-                        <Link to={`url`.replace(/([^:])(\/\/+)/g, "$1/")}>Ally Deeter</Link>
+                        {/* <Link to={`url`.replace(/([^:])(\/\/+)/g, "$1/")}>Ally Deeter</Link> */}
+                        <a href="https://www.allydeeter.dev/#//intro">Ally Deeter</a>
                     </div>
                     <button className="button" onClick={(e) => handleClick(e)}></button>
                     <ul className="sidenav-nav">

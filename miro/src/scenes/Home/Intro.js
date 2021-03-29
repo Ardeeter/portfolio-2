@@ -91,7 +91,7 @@ function Intro() {
                             <TextLoop>
                                 <span>Web Developer</span>
                                 {/* <span>Graphic Designer</span> */}
-                                <span>Software Engineer</span>
+                                <span>Coder</span>
                             </TextLoop>
                             <br />
                             <h5>Based in Santa Barbara</h5>
