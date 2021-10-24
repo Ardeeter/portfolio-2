@@ -25,7 +25,7 @@ function About() {
                                     </h3>
                                     <div className="divider divider-1"></div>
                                     <p>I am recent graduate of a 16 week immmersive full-stack software engineering bootcamp at DigitalCrafts. I decided to switch careers after one summer Python course I took at my local community college. As soon as I felt the rush and satisfaction of solving my first algorithm, I knew I was hooked. I thrive on critical thinking and problem solving. I look forward to pursuing my career and using my professional skill set to show how I can be an asset to your business.</p>
-                                    <p>In my free time, I don't go anywhere without my lab mix named Buddha. We enjoy adventuring in the wilderness and swimming at the beach. I also enjoy surfing, rock climbing, and kayaking.</p>
+                                    <p>In my free time, I don't go anywhere without my hskey pit named Buddha. We enjoy adventuring in the wilderness and swimming at the beach. I also enjoy surfing, rock climbing, and kayaking.</p>
                                 </header>
                                 <Row className="pt-30 justify-content-sm-center">
                                     <Col xs={2} sm={1} md={1} className="m-2">
